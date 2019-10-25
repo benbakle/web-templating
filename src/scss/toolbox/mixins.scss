@@ -1,0 +1,42 @@
+/*-------A-TAG STATES-------*/
+
+@mixin states {
+    &:hover,
+    &:active,
+    &.active,
+    &:focus {
+        @content;
+    }
+}
+
+/*-------THEMES-------*/
+
+@mixin theme($theme) {
+    $result: '';
+
+    @each $item in & {
+        $result: $result $theme $item ',';
+    }
+
+    @at-root #{$result} {
+        @content;
+    }
+}
+
+/*-------CUTSOM STYLES-------*/
+
+@mixin gutter {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+}
+
+@mixin reset-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin boxShadow {
+    box-shadow: 0 .1rem .3rem 0 rgba(0,0,0,.22);
+}

@@ -2,8 +2,31 @@
     font-size: 62.5%;
 }
 
-body {
+body,
+.body {
     margin: 0;
-    background-color: #333;
-    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+.apt-p {
+    line-height: 1.7em;
+}
+
+a,
+.apt-a {
+    color: inherit;
+    cursor: pointer;
+    transition-duration: .3s;
+
+    @include states {
+        opacity: .5;
+    }
+}
+
+.apt-container {
+    display: block;
+    width: 100%;
+    @include gutter;
 }

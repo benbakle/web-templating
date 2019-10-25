@@ -1,4 +1,12 @@
+
+//toolbox
+@import './toolbox/media-queries.scss';
+@import './toolbox/mixins.scss';
 @import './toolbox/typography.scss';
 @import './toolbox/headings.scss';
 
+//layouts
 @import './layouts/flex.scss';
+
+//components
+@import './components/header.scss';
