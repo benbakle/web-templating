@@ -148,7 +148,7 @@ sync = () => {
             router(req, res, next)
         }]
     });
-    log("browser syncing is active is active...");
+    log("browser syncing is active...");
 }
 
 
